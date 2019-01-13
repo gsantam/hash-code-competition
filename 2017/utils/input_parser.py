@@ -5,7 +5,7 @@ class InputParser():
 
 	def parse(self):
 		with open(self.path, 'r') as file:
-			num_videos, num_endpoints, num_requests, num_caches, self.cache_capacity = [int(x) for x in file.readline().split(' ')]
+			num_videos, num_endpoints, num_requests, self.num_caches, self.cache_capacity = [int(x) for x in file.readline().split(' ')]
 			
 			self.videos = { idx_video : int(video_size.replace('\n','')) for idx_video, video_size in enumerate(file.readline().split(' ')) }
 
