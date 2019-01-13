@@ -1,3 +1,3 @@
 # Hash Code Competition
 
-Solucions for the last hash code competitions.
+Solutions for the last hash code competitions.
