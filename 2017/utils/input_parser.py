@@ -23,10 +23,10 @@ class InputParser():
 
 			self.requests = []
 			for idx_request in range(num_requests):
-				idx_video, idx_endpoint, request_size = [int(x) for x in file.readline().split(' ')]
+				idx_video, idx_endpoint, n_requests = [int(x) for x in file.readline().split(' ')]
 				self.requests.append({
 					'idx_video' : idx_video,
 					'idx_endpoint': idx_endpoint,
-					'size' : request_size
+					'n_requests' : n_requests
 				})
 
